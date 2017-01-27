@@ -1,5 +1,5 @@
 {
-  "name": "rando",
+  "name": "rando-js",
   "version": "0.1.0",
   "description": "Randomization utilities for NodeJS in es6",
   "main": "rando.js",
