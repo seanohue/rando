@@ -3,9 +3,18 @@
   "version": "0.1.0",
   "description": "Randomization utilities for NodeJS in es6",
   "main": "rando.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "uglify-js": "^2.7.0"
   },
+  "scripts": {
+    "test": "echo Nope",
+    "build": "npm run-script build:dist && npm run-script build:minify",
+    "build:dist": "babel rando.js -o dist/rando.js --source-maps",
+    "build:minify": "uglifyjs dist/rando.js --source-map dist/rando.min.js.map -o rando/fnk.min.js --compress --mangle -v --sequences --conditionals --comparisons --booleans --join_vars"
+  },
+
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seanohue/rando.git"
