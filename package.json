@@ -1,0 +1,27 @@
+{
+  "name": "rando",
+  "version": "0.1.0",
+  "description": "Randomization utilities for NodeJS in es6",
+  "main": "rando.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seanohue/rando.git"
+  },
+  "keywords": [
+    "random",
+    "rng",
+    "randomization",
+    "array",
+    "dice",
+    "node"
+  ],
+  "author": "Sean O'Donohue",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seanohue/rando/issues"
+  },
+  "homepage": "https://github.com/seanohue/rando#readme"
+}
