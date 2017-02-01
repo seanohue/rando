@@ -35,9 +35,7 @@ class Random {
    * @return  int Result of roll
    */
 
-  static roll(dice, sides) {
-    dice  = dice  || 1;
-    sides = sides || 20;
+  static roll(dice = 1, sides = 20) {
     return dice * (Math.floor(sides * Math.random()) + 1);
   }
 

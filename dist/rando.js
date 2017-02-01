@@ -54,9 +54,10 @@ var Random = function () {
 
   }, {
     key: 'roll',
-    value: function roll(dice, sides) {
-      dice = dice || 1;
-      sides = sides || 20;
+    value: function roll() {
+      var dice = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+      var sides = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 20;
+
       return dice * (Math.floor(sides * Math.random()) + 1);
     }
   }]);
