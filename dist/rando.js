@@ -60,6 +60,20 @@ var Random = function () {
 
       return dice * (Math.floor(sides * Math.random()) + 1);
     }
+
+    /**
+     * Check to see if a given percent chance occurs
+     * @param {number} percentChance a 0-100 number representing % success chance
+     * @return {boolean}
+     */
+
+  }, {
+    key: 'probability',
+    value: function probability(percentChance) {
+      var rand = Math.random();
+      var target = percentChance / 100;
+      return target >= rand;
+    }
   }]);
 
   return Random;

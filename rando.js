@@ -39,6 +39,16 @@ class Random {
     return dice * (Math.floor(sides * Math.random()) + 1);
   }
 
+  /**
+   * Check to see if a given percent chance occurs
+   * @param {number} percentChance a 0-100 number representing % success chance
+   * @return {boolean}
+   */
+  static probability(percentChance) {
+    const rand = Math.random();
+    const target = percentChance / 100;
+    return target >= rand;
+  }
 }
 
 exports.Random = Random;

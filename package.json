@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Randomization utilities for NodeJS in es6",
   "main": "rando.js",
-    "devDependencies": {
+  "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
     "uglify-js": "^2.7.0"
