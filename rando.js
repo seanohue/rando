@@ -34,9 +34,9 @@ class Random {
    * @param   int Sides per die
    * @return  int Result of roll
    */
-
   static roll(dice = 1, sides = 20) {
-    return dice * (Math.floor(sides * Math.random()) + 1);
+    const rolls = Array.from({length: dice}, () => Math.floor(sides * Math.random()) + 1);
+    return rolls.reduce((acc, roll) => acc + roll, 0);
   }
 
   /**
