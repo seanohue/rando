@@ -16,7 +16,7 @@ class Random {
    * @return random # in range
    */
   static inRange(min, max) {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.floor(Math.random() * (max - min + 1) + min);
   }
 
   /**
@@ -34,7 +34,6 @@ class Random {
    * @param   int Sides per die
    * @return  int Result of roll
    */
-
   static roll(dice = 1, sides = 20) {
     return dice * (Math.floor(sides * Math.random()) + 1);
   }
