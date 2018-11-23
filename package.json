@@ -1,6 +1,6 @@
 {
   "name": "rando-js",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Randomization utilities for NodeJS in es6",
   "main": "rando.js",
   "devDependencies": {
