@@ -49,6 +49,22 @@ class Random {
     const target = percentChance / 100;
     return target >= rand;
   }
+
+  /**
+   * Simulates a lottery where numbers are drown from a set of numbers
+   * @param {integer} amount The amount of numbers drawn
+   * @param {integer} maxNumber The maximum number of the set.
+   * @return Array of drawn numbers (returns the full set if amount >= maxNumber)
+   */
+  static drawLottery(amount, maxNumber) {
+    const set = Array.from({length: maxNumber}, (value, index) => index + 1);
+
+    if (amount >= maxNumber)  {
+      return set;
+    }
+
+    return set.sort(() => Math.random() - 0.5).slice(0, amount).sort((a, b) => a - b);
+  }
 }
 
 exports.Random = Random;
